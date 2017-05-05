@@ -7,7 +7,7 @@ namespace sshserver
 {
     class Program
     {
-        /*****/
+        /***** start the serser ****/
         static void Main(string[] args)
         {
             Server server = new Server();

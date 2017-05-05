@@ -11,6 +11,7 @@ namespace sshserver
 {
     class Server
     {
+        /* initialization ****/
         TcpListener server = null;
         Byte[] inbuffer = new Byte[2000];
         Byte[] outbuffer = new Byte[2000];
@@ -23,7 +24,7 @@ namespace sshserver
         {
             int connected = 1;
 
-            
+            /*** Using SSh.net to connect a remote server****/
             
                 try
                 {
@@ -44,7 +45,7 @@ namespace sshserver
                
                 
 
-                //client.Disconnect();
+              
 
                 return connected;
 
@@ -61,7 +62,7 @@ namespace sshserver
                     Console.WriteLine("waiting for connexion");
                     TcpClient client = server.AcceptTcpClient();
                     Console.WriteLine("connected");
-
+                    /*** opening the stream for sending and receiving data **/
                     String str = "";
                     NetworkStream stream = client.GetStream();
                     sr = new StreamReader(stream);
@@ -101,7 +102,7 @@ namespace sshserver
 
 
                             str = sr.ReadLine();
-
+                            /*** The clientssh is static so it use here to create a ssh Command***/
                             SshCommand cmd = clientssh.CreateCommand(str.ToString());
                             Console.WriteLine(str.ToString());
                             cmd.Execute();

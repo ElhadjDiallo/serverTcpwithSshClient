@@ -1,0 +1,6 @@
+c:\users\elhadj\documents\visual studio 2010\Projects\sshserver\sshserver\bin\Debug\sshserver.exe
+c:\users\elhadj\documents\visual studio 2010\Projects\sshserver\sshserver\bin\Debug\sshserver.pdb
+c:\users\elhadj\documents\visual studio 2010\Projects\sshserver\sshserver\bin\Debug\Renci.SshNet.xml
+c:\users\elhadj\documents\visual studio 2010\Projects\sshserver\sshserver\obj\x86\Debug\sshserver.csprojResolveAssemblyReference.cache
+c:\users\elhadj\documents\visual studio 2010\Projects\sshserver\sshserver\obj\x86\Debug\sshserver.exe
+c:\users\elhadj\documents\visual studio 2010\Projects\sshserver\sshserver\obj\x86\Debug\sshserver.pdb
